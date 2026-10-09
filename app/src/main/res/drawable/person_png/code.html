@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <radialGradient id="profileBgGrad" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#FFFDF8" />
+      <stop offset="100%" stop-color="#F7EEDD" />
+    </radialGradient>
+    <linearGradient id="profileAccentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E8751A" />
+      <stop offset="100%" stop-color="#C95D0C" />
+    </linearGradient>
+    <filter id="profileShadow" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#E8751A" flood-opacity="0.22" />
+    </filter>
+  </defs>
+
+  <!-- Circular container badge matching the screen's top right avatar -->
+  <circle cx="256" cy="256" r="236" fill="url(#profileBgGrad)" stroke="#E8751A" stroke-width="12" stroke-opacity="0.28" filter="url(#profileShadow)" />
+
+  <!-- Subtle inner concentric hairline ring -->
+  <circle cx="256" cy="256" r="218" fill="none" stroke="#E8751A" stroke-width="2.5" stroke-opacity="0.16" />
+
+  <!-- User Head -->
+  <circle cx="256" cy="184" r="66" fill="url(#profileAccentGrad)" />
+
+  <!-- Vedic Gold Bindi / Forehead Accent Dot -->
+  <circle cx="256" cy="140" r="9" fill="#F4B942" />
+
+  <!-- User Torso / Shoulders -->
+  <path d="M132 376 C132 296 190 276 256 276 C322 276 380 296 380 376 C380 392 368 404 352 404 L160 404 C144 404 132 392 132 376 Z" fill="url(#profileAccentGrad)" />
+</svg>
